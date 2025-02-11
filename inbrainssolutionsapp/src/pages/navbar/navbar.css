@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding-top: 100px;
+    font-family: Lato, sans-serif;
+}
+
+
+/* General reset for list styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the header */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:white  ;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the logo */
+  .logo img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  /* Style for the header menu */
+  .header-menu {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+  }
+  
+  /* Style for the main menu items */
+  .menu_inner ul {
+    display: flex;
+  }
+  
+  .menu_inner li {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  .menu_inner li span {
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .menu_inner li span:hover {
+    color: #ddd;
+  }
+  
+  /* Style for the submenu */
+  .submenu_wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-item:hover .submenu_wrap {
+    display: block;
+  }
+  
+  .submenu_wrap ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .submenu_wrap li {
+    margin: 0;
+  }
+  
+  .submenu_wrap a {
+    display: block;
+    padding: 8px 20px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+  }
+
+  .submenu_wrap h3{
+    padding: 8px 20px ;
+  }
+
+  
+  .submenu_wrap a:hover {
+    background-color: #3145cc;
+  }
+  
+  /* Style for the mobile button */
+  .mobile_button button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .mobile_button button:hover {
+    background-color: #e65c00;
+  }
+  
