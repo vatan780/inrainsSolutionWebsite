@@ -1,5 +1,9 @@
 import React from 'react'
-import applogo from '../../images/app-logo.png'
+// import applogo from '../../images/app-logo.png'
+import invis1 from '../../images/invis1.jpeg'
+// import invis1 from '../../images/'
+import invins2 from '../../images/invins2.jpeg'
+import invins3 from '../../images/invins3.jpeg'
 import './navbar.css'
 
 const Navbar = () => {
@@ -8,7 +12,11 @@ const Navbar = () => {
             <header className='header'>
                 <div className="logo">
                     <a href="/">
-                        <img src={applogo} alt="" height={"100px"} width={"100px"} />
+                        {/* <img src={applogo} alt="" height={"100px"} width={"100px"} /> */}
+                        {/* <img src={invis1} alt="" height={"100px"} width={"100px"} /> */}
+                        {/* <img src={invins2} alt="" height={"100px"} width={"100px"} /> */}
+                        <img src={invins3} alt="" height={"100px"} width={"100px"} />
+                        {/* <span>Inviciblebrains</span> */}
                     </a>
                 </div>
                 <div className="header-menu">
