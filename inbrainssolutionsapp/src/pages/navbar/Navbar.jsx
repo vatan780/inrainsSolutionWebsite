@@ -69,7 +69,7 @@ const Navbar = () => {
                                             <h3>Traditional Card Games</h3>
                                         </li>
                                         <li>
-                                            <a href="/">Poker</a>
+                                            <a href="/poker">Poker</a>
                                         </li>
                                         <li>
                                             <a href="/">Rummy</a>
