@@ -80,6 +80,7 @@
 .footer-below-sec{
     width:90%;
     display: flex;
+    justify-content:center;
     margin: 0 auto;
     gap: 100px;
 }

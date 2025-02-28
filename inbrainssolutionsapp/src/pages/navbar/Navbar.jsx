@@ -27,7 +27,7 @@ const Navbar = () => {
                                 <div className='submenu_wrap'>
                                     <ul>
                                         <li>
-                                            <a href="/">Mean Stack</a>
+                                            <a href="/meanStack">Mean Stack</a>
                                         </li>
                                         <li>
                                             <a href="/">Mern Stack</a>
@@ -51,16 +51,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu-item">
-                                <span>Testing</span>
-                                <div className='submenu_wrap'>
-                                    <ul>
-                                        <li>
-                                            <a href="/">Load and performance Testing</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+
                             <li class="menu-item">
                                 <span>Games</span>
                                 <div className='submenu_wrap'>
@@ -92,7 +83,20 @@ const Navbar = () => {
                                     </ul>
                                 </div>
                             </li>
+
+
                             <li class="menu-item">
+                                <span>Testing</span>
+                                <div className='submenu_wrap'>
+                                    <ul>
+                                        <li>
+                                            <a href="/">Load and performance Testing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            {/* <li class="menu-item">
                                 <span>Our Diverse Industry Reach</span>
                                 <div className="submenu_wrap">
                                     <ul>
@@ -100,12 +104,12 @@ const Navbar = () => {
                                     </ul>
                                 </div>
 
-                            </li>
+                            </li> */}
                         </ul>
 
                     </div>
                     <div className="mobile_button">
-                        <button>Contact Us</button>
+                        <button><a href="/contact">Contact Us</a></button>
                     </div>
                 </div>
 

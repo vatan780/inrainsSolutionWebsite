@@ -4,28 +4,32 @@ import canada from '../../images/canada.png'
 import southAfrica from '../../images/south-africa.png'
 import uae from '../../images/uae.png'
 import './footer.css'
+import { useNavigate } from 'react-router-dom';
+
 
 const Footer = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="footer-container">
                 <div className="footer-heading">
-                    <p>Taab Solutions: Building Next-Gen Apps & Websites, Real Money Games, and Marketing for Growth.</p>
+                    <p>Invincible Brains Solutions: Building Next-Gen Apps & Websites, Real Money Games, and Marketing for Growth.</p>
 
                 </div>
                 <div className="footer-upper-secc">
 
                     <div className="upper-footer-item">
-                        <img src={india} alt="" />
-                        <div className="country-address">
+                        {/* <img src={india} alt="" /> */}
+                        {/* <div className="country-address">
                             <span>INDIA</span>
                             <p>622, 6th Floor</p>
                             <p>Galleria Tower</p>
                             <p>Gurugram, Haryana- 122002</p>
-                        </div>
+                        </div> */}
                     </div>
 
-                    <div className="upper-footer-item">
+                    {/* <div className="upper-footer-item">
                         <img src={uae} alt="" />
                         <div className="country-address">
                             <span>UAE</span>
@@ -33,9 +37,9 @@ const Footer = () => {
                             <p>Marina Square,</p>
                             <p>AL Reem Island Abu Dhabi</p>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="upper-footer-item">
+                    {/* <div className="upper-footer-item">
                         <img src={southAfrica} alt="" />
                         <div className="country-address">
                             <span>WEST AFRICA</span>
@@ -43,9 +47,9 @@ const Footer = () => {
                             <p>WAKACO 03 BP 2178</p>
                             <p>Abidjan , Côté D’ivoire</p>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="upper-footer-item">
+                    {/* <div className="upper-footer-item">
                         <img src={canada} alt="" />
                         <div className="country-address">
                             <span>CANADA</span>
@@ -53,7 +57,7 @@ const Footer = () => {
                             <p>#712 ,92 Caplan Avenue,</p>
                             <p>Barrie, ON, Canada</p>
                         </div>
-                    </div>
+                    </div> */}
 
 
 
@@ -66,7 +70,7 @@ const Footer = () => {
                     <div className="footer-bottom-section">
                         <div className="section-item">
                             <p>+91 124-4705478</p>
-                            <p>nfo@taabsolutions.com</p>
+                            <p>nfo@invinciblebrainssolutions.com</p>    
                             <p>622, 6th Floor, Galleria Market, DLF Phase4, Gurgaon, Haryana - 122009</p>
                         </div>
                     </div>
@@ -75,12 +79,16 @@ const Footer = () => {
                             <p>Our Services</p>
                         </div>
                         <div className="section-item">
-                            <p>+91 124-4705478</p>
-                            <p>nfo@taabsolutions.com</p>
-                            <p>622, 6th Floor, Galleria Market, DLF Phase4, Gurgaon, Haryana - 122009</p>
+                            <p>MEAN Stack</p>
+                            <p>MERN Stack</p>
+                            <p>WordPress</p>
+                            <p>Shopify</p>
+                            <p>ReactNative</p>
+                            <p>Java</p>
+                            <p>Python</p>
                         </div>
                     </div>
-                    <div className="footer-bottom-section">
+                    {/* <div className="footer-bottom-section">
                         <div className="bottom-footer-heading">
                             <p>Marketing</p>
                         </div>
@@ -89,15 +97,14 @@ const Footer = () => {
                             <p>nfo@taabsolutions.com</p>
                             <p>622, 6th Floor, Galleria Market, DLF Phase4, Gurgaon, Haryana - 122009</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="footer-bottom-section">
                         <div className="bottom-footer-heading">
                             <p>Quick Links</p>
                         </div>
                         <div className="section-item">
-                            <p>+91 124-4705478</p>
-                            <p>nfo@taabsolutions.com</p>
-                            <p>622, 6th Floor, Galleria Market, DLF Phase4, Gurgaon, Haryana - 122009</p>
+                            <p>Home</p>
+                            <p onClick={()=>window.open('/contact')}>Contact Us</p>
                         </div>
                     </div>
 
@@ -106,9 +113,10 @@ const Footer = () => {
                             <p>Follow Us</p>
                         </div>
                         <div className="section-item">
-                            <p>+91 124-4705478</p>
-                            <p>nfo@taabsolutions.com</p>
-                            <p>622, 6th Floor, Galleria Market, DLF Phase4, Gurgaon, Haryana - 122009</p>
+                            <p>Facebook</p>
+                            <p>LinkedIn</p>
+                            <p>Twitter</p>
+                            <p>Instagram</p>
                         </div>
                     </div>
                 </div>

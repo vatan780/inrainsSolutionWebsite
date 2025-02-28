@@ -36,6 +36,8 @@ import socketioimg from "../../../images/socketio.png"
 import securityFeatureSectionImg from "../../../images/security-feature-section.png"
 import securityFeature from "../../../images/security-features.png"
 
+import Footer from '../../footer/Footer'
+
 
 
 
@@ -858,7 +860,9 @@ const PokerContent = () => {
                                 </Card>
 
 
-                            </Stack><Stack sx={{ width: '30%' }}>
+                            </Stack>
+
+                            <Stack sx={{ width: '30%' }}>
                                 <Card sx={{ backgroundColor: 'transparent', border: "2px solid #726eba", padding: "3rem", borderRadius: "20px" }}>
                                     <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' }}>
                                         <Typography gutterBottom sx={{ color: 'white', fontSize: '30px' }}>
@@ -866,14 +870,12 @@ const PokerContent = () => {
                                         </Typography>
                                         <Typography sx={{ color: "white" }}>
                                             Knock out opponents and earn rewards with every successful elimination.
-
-
                                         </Typography>
                                     </CardContent>
                                 </Card>
 
-
                             </Stack>
+
                             <Stack sx={{ width: '30%' }}>
                                 <Card sx={{ backgroundColor: 'transparent', border: "2px solid #726eba", padding: "3rem", borderRadius: "20px" }}>
                                     <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' }}>
@@ -895,29 +897,115 @@ const PokerContent = () => {
                     </Stack>
 
 
+                    <Stack
+                        sx={{
+                            width: "100%",
+                            minHeight: "800px",
+                            backgroundColor: "rgb(0 0 0/var(--tw-bg-opacity,1))",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            gap: "100px"
+                        }}
+                    >
+                        <Stack
+                            sx={{
+                                width: "90%",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"
+                            }}
+                        >
+                            <Typography variant='h3'>
+                                Trusted by Hundreds
+                            </Typography>
+                            <Typography variant='h3'>
+                                of Happy Customers
+                            </Typography>
+                            <Typography variant='h6'>
+                                Our commitment to excellence has empowered businesses of all sizes with innovative solutions that drive success.
+                            </Typography>
+                            <Typography variant='h6'>
+                                Here's what some of our customers have to say about us:
+                            </Typography>
+
+                        </Stack>
+
+                        <Stack
+                            sx={{
+                                width: "90%",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: "30px",
+                                flexDirection: 'row'
+                            }}
+                        >
+                            <Stack sx={{ width: '25%' }}>
+                                <Card sx={{ backgroundColor: 'transparent', border: "2px solid #726eba", padding: "3rem", borderRadius: "20px" }}>
+                                    <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' }}>
+                                        <Typography sx={{ color: 'white', fontSize: '30px' }}>
+                                            Bounty Tournaments
+                                        </Typography>
+                                        <Typography sx={{ color: "white" }}>
+                                            Knock out opponents and earn rewards with every successful elimination.
 
 
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Stack>
 
 
+                            <Stack sx={{ width: '25%' }}>
+                                <Card sx={{ backgroundColor: 'transparent', border: "2px solid #726eba", padding: "3rem", borderRadius: "20px" }}>
+                                    <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' }}>
+                                        <Typography sx={{ color: 'white', fontSize: '30px' }}>
+                                            Bounty Tournaments
+                                        </Typography>
+                                        <Typography sx={{ color: "white" }}>
+                                            Knock out opponents and earn rewards with every successful elimination.
 
 
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+
+                            </Stack>
+
+                            <Stack sx={{ width: '25%' }}>
+                                <Card sx={{ backgroundColor: 'transparent', border: "2px solid #726eba", padding: "3rem", borderRadius: "20px", boxShadow: "rgba(134, 133, 198, 0.1) 0px 0px 0px 200px inset" }}>
+                                    <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: 'center' }}>
+                                        <Typography sx={{ color: 'white', fontSize: '30px' }}>
+                                            Bounty Tournaments
+                                        </Typography>
+                                        <Typography sx={{ color: "white" }}>
+                                            Knock out opponents and earn rewards with every successful elimination.
 
 
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
 
+                            </Stack>
 
+                        </Stack>
 
+                    </Stack>
 
-
+                    
+                    <Stack>
+                        <Footer />
+                    </Stack>
 
 
                 </Stack>
 
-
-
-
-
             </Stack>
+
+
         </>
+
     )
 }
 

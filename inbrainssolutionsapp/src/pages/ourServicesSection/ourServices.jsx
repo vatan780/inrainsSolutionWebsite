@@ -89,7 +89,7 @@ const OurServices = () => {
             <div className="digital-dream-section">
                 <h3>Craft Your Digital Dream</h3>
                 <p>
-                    Taab Solutions builds success with stunning design, cutting-edge tech & powerful marketing. Empower your vision with a superb range of digital products & white-label gaming solutions.
+                    Invincible Brains Solutions builds success with stunning design, cutting-edge tech & powerful marketing. Empower your vision with a superb range of digital products & white-label gaming solutions.
                 </p>
                 <button className='whoweare'>Who We Are</button>
             </div>
@@ -204,7 +204,7 @@ const OurServices = () => {
                         <p> TECH STACK</p>
                     </div>
                     <div className="tech-para">
-                        <p>At Taab Solutions, our tech stack services are meticulously crafted to empower your digital journey, featuring Front End Development, MEAN Stack, and MERN Stack expertise. We're committed to providing an end-to-end partnership that not only builds but also scales and transforms your web presence. Leveraging the latest in technology, our dedicated team ensures your projects are not just completed but excel in today's competitive digital landscape. Whether starting from scratch or refining an existing platform, Taab Solutions is your ally in harnessing the power of web technology to achieve tangible growth.</p>
+                        <p>At Invincible Brains  Solutions, our tech stack services are meticulously crafted to empower your digital journey, featuring Front End Development, MEAN Stack, and MERN Stack expertise. We're committed to providing an end-to-end partnership that not only builds but also scales and transforms your web presence. Leveraging the latest in technology, our dedicated team ensures your projects are not just completed but excel in today's competitive digital landscape. Whether starting from scratch or refining an existing platform, Invincible Brains  Solutions is your ally in harnessing the power of web technology to achieve tangible growth.</p>
                     </div>
 
                     <div className="tech-images">
@@ -256,7 +256,7 @@ const OurServices = () => {
                     <div className="testimonial-scroll-item yellowColor">
                         <img src={test_qut} alt="" />
                         <p>
-                            Taab Solutions' exceptional digital resources and specialist network have fueled our growth and success over the past year. I highly recommend their services.
+                            Invincible Brains  Solutions' exceptional digital resources and specialist network have fueled our growth and success over the past year. I highly recommend their services.
                         </p>
                         <span>Smoke Break Agency</span>
                     </div>
@@ -265,7 +265,7 @@ const OurServices = () => {
                         <img src={test_qut} alt="" />
                         <p>
 
-                            Taab Solutions enhanced our online visibility and customer
+                            Invincible Brains  Solutions enhanced our online visibility and customer
                             acquisition, leading to more loan applications. Their deep
                             understanding of financial services makes them invaluable.
 
