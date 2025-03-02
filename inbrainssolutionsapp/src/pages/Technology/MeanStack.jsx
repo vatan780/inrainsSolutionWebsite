@@ -2,6 +2,9 @@ import { Button, Stack, Typography } from '@mui/material'
 import React from 'react'
 import meanStackImg from '../../images/meanStack.webp'
 import khiladiadda from '../../images/khiladiadda.webp'
+import CardSlider from './CardSlider'
+import FAQuestion from './FAQuestion'
+import Footer from '../footer/Footer'
 
 const MeanStack = () => {
     return (
@@ -81,7 +84,8 @@ const MeanStack = () => {
                     sx={{
                         width: "100%",
                         margin: "auto",
-                        marginTop: "100px"
+                        marginTop: "100px",
+                        marginBottom: "50px"
 
                     }}
                     gap={2}
@@ -101,10 +105,72 @@ const MeanStack = () => {
 
 
                 <Stack
-                    sx={{ width:"100%"}}
+                    sx={{ width: "80%", margin: "auto" }}
                 >
 
+                    <CardSlider />
+
                 </Stack>
+
+                <Stack
+                    sx={{ width: "100%",marginTop:"100px", background: "" }}
+                >
+                    <Stack sx={{
+                        width: "80%",
+                        margin: "auto",
+                        backgroundColor: "#03befc",
+                        minHeight: "350px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: 'center',
+                        gap: "50px"
+                    }}>
+                        <Typography variant='h3'>
+                            Ready to Dominate the Digital Space?
+                        </Typography>
+                        <Typography variant='h6'>
+                            We're all about results, not just clicks. Elevate your brand's digital presence with our expert-led digital marketing
+                        </Typography>
+                        <Typography variant='h6'>
+                            services.
+                        </Typography>
+
+                        <Button sx={{
+                            backgroundColor: "black",
+                            color: "white",
+                            width: "fit-content",
+
+                        }}>
+                            Contact Us
+                        </Button>
+                    </Stack>
+
+
+
+                </Stack>
+
+                <Stack
+                    sx={{ width: "100%",marginTop:"100px", marginBottom:"100px",background: "" }}
+                >
+                    <Stack sx={{
+                        width: "80%",
+                        margin: "auto",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: 'center',
+                        
+                    }}>
+
+                        <FAQuestion/>
+                    </Stack>
+                </Stack>
+
+
+                <Stack>
+                   <Footer/>
+                </Stack>
+
+                
 
 
             </Stack>
