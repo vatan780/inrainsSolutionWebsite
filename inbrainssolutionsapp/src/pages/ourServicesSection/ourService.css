@@ -465,3 +465,18 @@ img.client-img {
     background-color: black;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+    body {
+      background-color: lightblue;
+    }
+  }

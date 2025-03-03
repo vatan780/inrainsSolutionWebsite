@@ -1,18 +1,18 @@
 import { Button, Stack, Typography } from '@mui/material'
 import React from 'react'
-import meanStackImg from '../../images/meanStack.webp'
+import meanStackImg from '../../images/mearnStack.webp'
 import khiladiadda from '../../images/khiladiadda.webp'
 import CardSlider from './CardSlider'
 import FAQuestion from './FAQuestion'
 import Footer from '../footer/Footer'
 import Navbar from '../navbar/Navbar'
 
-const MeanStack = () => {
+const MearnStack = () => {
     return (
         <>
         <Navbar/>
             <Stack
-                sx={{ width: "100%", height: "auto" ,marginTop:"50px" }}
+                sx={{ width: "100%", height: "auto" ,marginTop:"50px"}}
             >
 
                 <Stack
@@ -115,7 +115,7 @@ const MeanStack = () => {
                 </Stack>
 
                 <Stack
-                    sx={{ width: "100%",marginTop:"100px", background: "" }}
+                    sx={{ width: "100%", marginTop: "100px", background: "" }}
                 >
                     <Stack sx={{
                         width: "80%",
@@ -152,7 +152,7 @@ const MeanStack = () => {
                 </Stack>
 
                 <Stack
-                    sx={{ width: "100%",marginTop:"100px", marginBottom:"100px",background: "" }}
+                    sx={{ width: "100%", marginTop: "100px", marginBottom: "100px", background: "" }}
                 >
                     <Stack sx={{
                         width: "80%",
@@ -160,19 +160,19 @@ const MeanStack = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: 'center',
-                        
+
                     }}>
 
-                        <FAQuestion/>
+                        <FAQuestion />
                     </Stack>
                 </Stack>
 
 
                 <Stack>
-                   <Footer/>
+                    <Footer />
                 </Stack>
 
-                
+
 
 
             </Stack>
@@ -180,4 +180,4 @@ const MeanStack = () => {
     )
 }
 
-export default MeanStack
+export default MearnStack

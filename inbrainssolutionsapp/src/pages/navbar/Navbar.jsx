@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState }  from 'react'
 // import applogo from '../../images/app-logo.png'
 import invis1 from '../../images/invis1.jpeg'
 // import invis1 from '../../images/'
 import invins2 from '../../images/invins2.jpeg'
 import invins3 from '../../images/invins3.jpeg'
 import './navbar.css'
+import { FaBars, FaTimes } from "react-icons/fa"; // Import icons
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    // Function to toggle menu
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <>
             <header className='header'>
@@ -19,7 +26,15 @@ const Navbar = () => {
                         {/* <span>Inviciblebrains</span> */}
                     </a>
                 </div>
-                <div className="header-menu">
+
+
+                <div className="hamburger" onClick={toggleMenu}>
+                    {isOpen ? <FaTimes /> : <FaBars />}
+                </div>
+
+
+                <div className={isOpen ? "header-menu active" : "header-menu"}>
+                {/* <div className="header-menu">className={isOpen ? "nav-links active" : "nav-links"} */}
                     <div className="menu_inner">
                         <ul>
                             <li class="menu-item">
@@ -30,7 +45,7 @@ const Navbar = () => {
                                             <a href="/meanStack">Mean Stack</a>
                                         </li>
                                         <li>
-                                            <a href="/">Mern Stack</a>
+                                            <a href="/mearnStack">Mern Stack</a>
                                         </li>
                                         <li>
                                             <a href="/">React Native</a>
@@ -95,16 +110,6 @@ const Navbar = () => {
                                     </ul>
                                 </div>
                             </li>
-                            
-                            {/* <li class="menu-item">
-                                <span>Our Diverse Industry Reach</span>
-                                <div className="submenu_wrap">
-                                    <ul>
-                                        <li>E-Comerce</li>
-                                    </ul>
-                                </div>
-
-                            </li> */}
                         </ul>
 
                     </div>

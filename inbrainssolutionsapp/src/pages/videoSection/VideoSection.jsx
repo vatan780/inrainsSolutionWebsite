@@ -5,7 +5,7 @@ import "./videoSection.css"
 const VideoSection = () => {
     return (
         <>
-            <div className="background-image-section">\
+            <div className="background-image-section">
                 <div className="text-animation-section">
                     <div className="animation-heading">
                         <h1>We Deliver</h1>
@@ -20,13 +20,13 @@ const VideoSection = () => {
                     </div>
                 </div>
 
-                <div className="video-container-section">
+                {/* <div className="video-container-section">
                     <div className="video"> 
                         <video controls >
                             <source src={taabVideo} type="video/mp4" />
                         </video>
                     </div>
-                </div>
+                </div> */}
             </div>
 
 
