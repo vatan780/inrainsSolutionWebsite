@@ -366,11 +366,11 @@
 }
 
 
-
+/* 
 img.client-img {
     height: 4rem;
     filter: invert(100%) sepia(0) saturate(100%) hue-rotate(284deg) brightness(220%) contrast(0%);
-}
+} */
 
 
     
@@ -476,7 +476,142 @@ img.client-img {
 
 
 @media (max-width: 575px) {
-    body {
-      background-color: lightblue;
+   
+
+    .tech-images{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+        
     }
+
+
+    .digital-dream-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 10px;
+        font-family: Lato, sans-serif;
+        height: auto;
+        padding-left: 100px; 
+        overflow-x: hidden;
+    }
+
+    .digital-dream-section h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .whoweare {
+        width: fit-content;
+        padding: 10px 30px;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        background-color: black;
+        
+    }
+
+
+.serviceheading h3 {
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.service-item-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.service-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item h3 {
+    width: auto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+
+.client-name-img{
+    width:100%;
+}
+
+
+
+.about-business{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 0;
+    
+}
+
+.about-business p{
+    font-size:30px;
+    font-weight: 500;
+}
+
+
+.about-business button{
+    padding:15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+
+.testi-heading{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.testi-heading p{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+
+
+.desc-heading{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.desc-heading p{
+    font-size: 30px;
+    font-weight:600;
+
+}
+
+.desc-heading-line{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
   }

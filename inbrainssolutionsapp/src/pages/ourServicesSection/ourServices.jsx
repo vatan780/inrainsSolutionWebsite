@@ -26,6 +26,13 @@ import dharti from '../../images/dhartii.png'
 import rupee from '../../images/rupee.png'
 import josh from '../../images/josh.png'
 import test_qut from '../../images/test_qut.png'
+import khiladiadda from '../../images/khiladiadda.webp'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import { Autoplay, FreeMode } from 'swiper/modules'
+import { Stack, Typography } from '@mui/material'
 
 
 
@@ -82,6 +89,26 @@ const OurServices = () => {
             }, 500);
         }
     };
+
+
+    let data = [
+        {
+            "color": "yellow",
+            "image": test_qut,
+            "para": "Invincible Brains  Solutions' exceptional digital resources and specialist network have fueled our growth and success over the past year. I highly recommend their services.",
+            "span": "Smoke Break Agency",
+            "textColor": "black"
+        },
+        {
+            "color": "green",
+            "image": test_qut,
+            "para": " Invincible Brains  Solutions enhanced our online visibility and customeacquisition, leading to more loan applications. Their deepunderstanding of financial services makes them invaluable.",
+            "span": "Salary Day",
+            "textColor":"black"
+
+
+        }
+    ]
 
 
     return (
@@ -143,9 +170,9 @@ const OurServices = () => {
                 <button>Let's talk</button>
             </div>
 
-            
 
-            <div className="our-client-container">
+
+            {/* <div className="our-client-container">
                 <h3 className='our-clent-img'>OUR CLIENTS</h3>
 
                 <div className="slider-container">
@@ -197,7 +224,7 @@ const OurServices = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
 
             <div className="tech-stack-container">
@@ -228,9 +255,12 @@ const OurServices = () => {
 
                     <div className="client-desc-img">
                         <div className="client-name-img">
-                            <img src={sanddollor} alt="" className='client-img' />
+                            <img src={khiladiadda} alt="" className='client-img' />
                         </div>
-                        <div className="client-name-img">
+                        {/* <div className="client-name-img">
+                            <img src={sanddollor} alt="" className='client-img' />
+                        </div> */}
+                        {/* <div className="client-name-img">
                             <img src={justjane} alt="" className='client-img' />
                         </div>
                         <div className="client-name-img">
@@ -244,7 +274,7 @@ const OurServices = () => {
                         </div>
                         <div className="client-name-img">
                             <img src={josh} alt="" className='client-img' />
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -255,7 +285,82 @@ const OurServices = () => {
                     <p>TESTIMONIALS</p>
                 </div>
                 <div className="testimonial-scroll-section">
-                    <div className="testimonial-scroll-item yellowColor">
+
+
+                    {/* 
+                    <Swiper
+                        spaceBetween={50}
+                        slidesPerView={3}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        <SwiperSlide>Slide 1</SwiperSlide>
+                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>Slide 3</SwiperSlide>
+                        <SwiperSlide>Slide 4</SwiperSlide>
+                        ...
+                    </Swiper> */}
+
+
+
+                    <div className="w-full">
+                        <Swiper
+                            modules={[Autoplay, FreeMode]}
+                            spaceBetween={20}
+                            slidesPerView={1}
+                            loop={true}
+                            freeMode={true}
+                            autoplay={{ delay: 0, disableOnInteraction: false }}
+                            speed={4000} // Adjust speed for smooth infinite scrolling
+                            className="h-40"
+                        >
+                            {data.map((card, index) => (
+                                <SwiperSlide
+                                    key={index}
+                                    className="flex items-center justify-center bg-blue-500 text-white p-10 rounded-lg"
+                                >
+
+                                    <>
+                                        <Stack sx={{
+                                            width: "100%",
+                                            minHeight: "400px",
+                                            padding: "50px",
+                                            backgroundColor: `${card.color}`,
+                                            color: "white",
+                                            gap: "50px",
+                                            transition: "background-color 0.3s ease-in-out",
+                                            "&:hover": {
+                                                backgroundColor: "blue", // Change to blue on hover
+                                            },
+                                        }}>
+                                            <Typography variant="h3">
+                                                <img src={card.image} alt="" />
+
+                                                {/* {card.image} */}
+                                            </Typography>
+                                            <Typography variant="h6" sx={{ color:`${card.textColor}` }}>
+                                                {card.para}
+                                            </Typography>
+
+                                            <Typography variant="h6" sx={{ color:`${card.textColor}` }}>
+                                                {card.span}
+                                            </Typography>
+
+
+
+                                        </Stack>
+                                    </>
+
+
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+
+
+
+
+                    {/* <div className="testimonial-scroll-item yellowColor">
                         <img src={test_qut} alt="" />
                         <p>
                             Invincible Brains  Solutions' exceptional digital resources and specialist network have fueled our growth and success over the past year. I highly recommend their services.
@@ -273,7 +378,7 @@ const OurServices = () => {
 
                         </p>
                         <span>Salary Day</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

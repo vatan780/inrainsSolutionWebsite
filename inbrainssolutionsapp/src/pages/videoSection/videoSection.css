@@ -115,9 +115,17 @@
 
     }
 
+    .scrolling-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: scrollUpDown 9s infinite;
+        gap:25px
+    }
+
     .animation-heading h1 {
         font-size:50px;
-        letter-spacing: 20px;
+        /* letter-spacing: 20px; */
         line-height: 50px;
     }
 
@@ -142,5 +150,7 @@
        
         
     }
+
+
 
 }

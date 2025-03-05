@@ -146,11 +146,12 @@ ul {
       flex-direction: column;
       background: #444;
       position: absolute;
-      top: 60px;
+      top: 75px;
       right: 0;
-      width: 100%;
+      /* width: 100%; */
       padding: 10px;
       border-radius: 5px;
+      gap: 20px;
     }
 
 
@@ -161,5 +162,45 @@ ul {
     .hamburger {
       display: block;
     }
+
+    .menu_inner{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: #444;
+
+    }
+
+    .menu_inner ul{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      
+    }
+
+    .menu_inner li span {
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+
+
+    .menu-item:hover .submenu_wrap {
+      display: block;
+  }
+  
+  .submenu_wrap {
+      display: none;
+      position: static;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+   
 
   }

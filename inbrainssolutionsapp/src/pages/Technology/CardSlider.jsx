@@ -46,12 +46,17 @@ const CardSlider = () => {
             <Swiper
                 modules={[Autoplay, FreeMode]}
                 spaceBetween={20}
-                slidesPerView={3}
+                slidesPerView={1}
                 loop={true}
                 freeMode={true}
                 autoplay={{ delay: 0, disableOnInteraction: false }}
-                speed={3000} // Adjust speed for smooth infinite scrolling
+                speed={4000} // Adjust speed for smooth infinite scrolling
                 className="h-40"
+                breakpoints={{
+                    575: {
+                        slidesPerView: 3, // Show only 1 card when screen width is <= 575px
+                    },
+                }}
             >
                 {cards.map((card, index) => (
                     <SwiperSlide

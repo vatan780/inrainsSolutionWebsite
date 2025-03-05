@@ -63,9 +63,9 @@ const Footer = () => {
 
 
                 </div>
-                <div className="footer-middle-line">
+                {/* <div className="footer-middle-line">
 
-                </div>
+                </div> */}
                 <div className="footer-below-sec">
                     <div className="footer-bottom-section">
                         <div className="section-item">
