@@ -5,6 +5,7 @@ import Home from './pages/home/Home'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MeanStack from './pages/Technology/MeanStack';
 import MearnStack from './pages/Technology/MearnStack';
+import SnackLadder from './pages/games/snackLadder/SnackLadder';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/poker' element={<Poker/>}/>
         <Route path='/meanStack' element={<MeanStack/>}/>
         <Route path='/mearnStack' element={<MearnStack/>}/>
+        <Route path='/snackLadder' element={<SnackLadder/>}/>
 
       </Routes>
     </Router>

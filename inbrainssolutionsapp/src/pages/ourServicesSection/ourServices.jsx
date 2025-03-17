@@ -34,6 +34,9 @@ import 'swiper/css';
 import { Autoplay, FreeMode } from 'swiper/modules'
 import { Stack, Typography } from '@mui/material'
 
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 
@@ -51,6 +54,7 @@ const clients = [
 const extendedClients = [clients[clients.length - 1], ...clients, clients[0]];
 
 const OurServices = () => {
+    const navigate = useNavigate();
 
     const sliderRef = useRef(null);
     const slideWidth = useRef(0);
@@ -118,7 +122,7 @@ const OurServices = () => {
                 <p>
                     Invincible Brains Solutions builds success with stunning design, cutting-edge tech & powerful marketing. Empower your vision with a superb range of digital products & white-label gaming solutions.
                 </p>
-                <button className='whoweare'>Who We Are</button>
+                <button className='whoweare' onClick={()=>navigate('/contact')  }>Who We Are</button>
             </div>
             <div className="ourServices">
                 <div className="serviceheading">
@@ -167,7 +171,7 @@ const OurServices = () => {
                     </div>
                 </div>
 
-                <button>Let's talk</button>
+                <button onClick={()=>navigate('/contact')}>Let's talk</button>
             </div>
 
 
@@ -384,7 +388,7 @@ const OurServices = () => {
 
             <div className="about-business">
                 <p>LETS TALK BUSINESS</p>
-                <button>Contact Us</button>
+                <button onClick={()=>navigate('/contact')}>Contact Us</button>
             </div>
 
 

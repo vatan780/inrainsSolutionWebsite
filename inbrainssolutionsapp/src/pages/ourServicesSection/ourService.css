@@ -26,6 +26,8 @@
     font-size: 25px;
 }
 
+
+
 .whoweare {
     width: fit-content;
     padding: 20px 50px;
@@ -33,6 +35,7 @@
     font-weight: 500;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 
 
@@ -97,6 +100,7 @@
     font-weight: 600;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 
 
@@ -464,6 +468,7 @@ img.client-img {
     font-weight: 600;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -510,6 +515,7 @@ img.client-img {
         font-weight: 500;
         color: white;
         background-color: black;
+        cursor: pointer;
         
     }
 
@@ -571,6 +577,7 @@ img.client-img {
     font-weight: 600;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 

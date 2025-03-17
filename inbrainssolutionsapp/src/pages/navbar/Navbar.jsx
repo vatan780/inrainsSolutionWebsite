@@ -37,6 +37,39 @@ const Navbar = () => {
                 {/* <div className="header-menu">className={isOpen ? "nav-links active" : "nav-links"} */}
                     <div className="menu_inner">
                         <ul>
+
+
+                        <li class="menu-item">
+                                <span>Games</span>
+                                <div className='submenu_wrap'>
+                                    <ul>
+                                        <li>
+                                            <h3>Traditional Card Games</h3>
+                                        </li>
+                                        <li>
+                                            <a href="/poker">Poker</a>
+                                        </li>
+                                        <li>
+                                            <a href="/snackLadder">Snack Ladder</a>
+                                        </li>
+                                        {/* <li>
+                                            <a href="/">Black Jack</a>
+                                        </li> */}
+                                        <li>
+                                            <h3>Regional Card Games</h3>
+                                        </li>
+                                        <li>
+                                            <a href="/">Rummy</a>
+                                        </li>
+                                        {/* <li>
+                                            <a href="/">7 and a Half</a>
+                                        </li>
+                                        <li>
+                                            <a href="/">Cato</a>
+                                        </li> */}
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="menu-item">
                                 <span>Technology</span>
                                 <div className='submenu_wrap'>
@@ -67,37 +100,7 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="menu-item">
-                                <span>Games</span>
-                                <div className='submenu_wrap'>
-                                    <ul>
-                                        <li>
-                                            <h3>Traditional Card Games</h3>
-                                        </li>
-                                        <li>
-                                            <a href="/poker">Poker</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Rummy</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Black Jack</a>
-                                        </li>
-                                        <li>
-                                            <h3>Regional Card Games</h3>
-                                        </li>
-                                        <li>
-                                            <a href="/">ChinCon</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">7 and a Half</a>
-                                        </li>
-                                        <li>
-                                            <a href="/">Cato</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                           
 
 
                             <li class="menu-item">
