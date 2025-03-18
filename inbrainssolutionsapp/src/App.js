@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MeanStack from './pages/Technology/MeanStack';
 import MearnStack from './pages/Technology/MearnStack';
 import SnackLadder from './pages/games/snackLadder/SnackLadder';
+import SocialMediaMarketing from './pages/SocialMedia/SocialMediaMarketing';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/meanStack' element={<MeanStack/>}/>
         <Route path='/mearnStack' element={<MearnStack/>}/>
         <Route path='/snackLadder' element={<SnackLadder/>}/>
+        <Route path='/socialMediaMarketing' element={<SocialMediaMarketing/>}/>
 
       </Routes>
     </Router>

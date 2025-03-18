@@ -94,7 +94,7 @@ const Navbar = () => {
                                 <div className='submenu_wrap'>
                                     <ul>
                                         <li>
-                                            <a href="/">Social Media Marketing</a>
+                                            <a href="/socialMediaMarketing">Social Media Marketing</a>
                                         </li>
                                     </ul>
                                 </div>
